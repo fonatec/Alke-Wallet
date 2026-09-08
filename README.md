@@ -1,46 +1,55 @@
 # Alke Wallet
 
-## Descripción del proyecto
+## Descripción
 
-Alke Wallet es una aplicación web Front-End que simula el funcionamiento básico de una billetera digital.
+Alke Wallet es una aplicación web que simula el funcionamiento de una billetera digital. Permite administrar usuarios, consultar saldos, registrar movimientos y realizar transferencias entre usuarios.
 
-El proyecto permite a los usuarios iniciar sesión, visualizar su saldo disponible, realizar depósitos, enviar dinero a contactos y revisar el historial de transacciones realizadas.
+En esta etapa se implementó un backend con Node.js, Express, PostgreSQL y Sequelize.
 
-Este trabajo fue desarrollado como parte de la evaluación del Módulo 2: Fundamentos del desarrollo Front-End.
+## Funcionalidades
 
----
-
-## Funcionalidades principales
-
-- Inicio de sesión con validación de credenciales.
-- Visualización del saldo disponible.
-- Realización de depósitos.
-- Simulación de envío de dinero a contactos.
-- Registro de últimos movimientos.
-- Agregar nuevos contactos.
-- Búsqueda de contactos con autocompletar.
-- Cierre de sesión.
-- Diseño responsive adaptable a distintos dispositivos.
-- Uso de almacenamiento local mediante localStorage.
-
----
+- Listar usuarios.
+- Buscar usuarios por nombre.
+- Crear usuarios.
+- Actualizar usuarios.
+- Eliminar usuarios.
+- Validar la existencia de los usuarios.
+- Consultar un usuario junto con sus movimientos.
+- Realizar transferencias entre usuarios.
+- Registrar los movimientos de envío y recepción.
+- Ejecutar rollback cuando una transferencia presenta errores.
 
 ## Tecnologías utilizadas
 
-- HTML5
-- CSS3
+- Node.js
+- Express
+- PostgreSQL
+- Sequelize
 - JavaScript
-- Bootstrap
-- jQuery
-- Git
-- GitHub
+- HTML
+- CSS
+- Git y GitHub
 
----
-
-## Credenciales de prueba
-
-Para ingresar a la aplicación se pueden usar las siguientes credenciales:
+## Estructura del proyecto
 
 ```text
-Correo: admin@email.com
-Contraseña: 1234
+Alke-wallet/
+├── assets/
+├── config/
+│   ├── database.js
+│   └── sequelize.js
+├── controllers/
+│   ├── usuariosController.js
+│   └── transferenciasController.js
+├── models/
+│   ├── Usuario.js
+│   ├── Movimiento.js
+│   └── index.js
+├── routes/
+│   ├── usuariosRoutes.js
+│   └── transferenciasRoutes.js
+├── services/
+│   └── transferenciaService.js
+├── server.js
+├── package.json
+└── README.md

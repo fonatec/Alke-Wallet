@@ -1,0 +1,30 @@
+{
+  "name": "alke-wallet",
+  "version": "1.0.0",
+  "description": "Alke Wallet es una aplicación web Front-End que simula el funcionamiento básico de una billetera digital.",
+  "main": "index.js",
+  "scripts":  {
+  "start": "node server.js",
+  "dev": "node --watch server.js",
+  "test": "echo \"No hay pruebas automatizadas configuradas\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fonatec@github.com/fonatec/Alke-Wallet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fonatec/Alke-Wallet/issues"
+  },
+  "homepage": "https://github.com/fonatec/Alke-Wallet#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.23.0",
+    "sequelize": "^6.37.8"
+  }
+}
