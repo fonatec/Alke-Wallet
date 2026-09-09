@@ -9,9 +9,17 @@ const {
   obtenerUsuarioConMovimientos
 } = require('../controllers/usuariosController');
 
+const {
+  verificarToken
+} = require('../middlewares/authMiddleware');
+
 router.get('/', obtenerUsuarios);
 
-router.get('/:id/movimientos', obtenerUsuarioConMovimientos);
+router.get(
+  '/:id/movimientos',
+  verificarToken,
+  obtenerUsuarioConMovimientos
+);
 
 router.post('/', crearUsuario);
 

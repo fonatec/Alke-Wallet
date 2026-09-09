@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "Alke Wallet es una aplicación web Front-End que simula el funcionamiento básico de una billetera digital.",
   "main": "index.js",
-  "scripts":  {
-  "start": "node server.js",
-  "dev": "node --watch server.js",
-  "test": "echo \"No hay pruebas automatizadas configuradas\""
-
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "echo \"No hay pruebas automatizadas configuradas\""
   },
   "repository": {
     "type": "git",
@@ -24,6 +23,8 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.3.0",
     "pg": "^8.23.0",
     "sequelize": "^6.37.8"
   }

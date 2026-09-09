@@ -5,6 +5,10 @@ const {
   transferir
 } = require('../controllers/transferenciasController');
 
-router.post('/', transferir);
+const {
+  verificarToken
+} = require('../middlewares/authMiddleware');
+
+router.post('/', verificarToken, transferir);
 
 module.exports = router;
